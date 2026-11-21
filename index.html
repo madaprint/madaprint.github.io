@@ -74,4 +74,283 @@
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">ESPECIALIDADES</span>
+        <h2>LO QUE CONSTRUIMOS</h2>
+        <p>Combinamos precisión técnica CAD, escultura digital y manufactura aditiva para materializar ideas que no existen en catálogo.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="chamfer-card service-card">
+          <span class="card-number">01</span>
+          <h3>MODELADO Y ESCANEO 3D</h3>
+          <p>Ingeniería inversa con escáner 3D de alta precisión, modelado técnico en CAD y escultura digital de personajes listos para fabricación.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">02</span>
+          <h3>TROFEOS Y RECORDATORIOS</h3>
+          <p>Galardones corporativos, piezas conmemorativas y artículos personalizados en impresión 3D FDM y resina con acabados limpios.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">03</span>
+          <h3>CORTE Y GRABADO LÁSER</h3>
+          <p>Personalización de precisión en madera, cuero, acrílico y materiales especiales para marcas, eventos y gastronomía.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">04</span>
+          <h3>ARQUITECTURA EFÍMERA Y RENDER</h3>
+          <p>Diseño espacial de stands, recorridos virtuales en tiempo real y renders fotorrealistas de gran formato para ferias y eventos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio filtrable -->
+  <section id="portafolio" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">ARCHIVO DE PROYECTOS</span>
+        <h2>HECHO EN EL TALLER</h2>
+        <p>Una muestra de piezas fabricadas, escaneos técnicos y desarrollos visuales.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Filtrar proyectos">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="impresion3d">Impresión 3D y Trofeos</button>
+        <button class="filter-btn" data-filter="escaneo">Modelado y Escaneo</button>
+        <button class="filter-btn" data-filter="laser">Láser y Espacio</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <article class="chamfer-card portfolio-item" data-category="impresion3d">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 01 · TROFEOS 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">IMPRESIÓN 3D</span>
+            <h3>Trofeos Corporativos a Medida</h3>
+            <p>Producción en serie corta con geometría personalizada y acabados multicapa.</p>
+          </div>
+        </article>
+
+        <article class="chamfer-card portfolio-item" data-category="escaneo">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 02 · ESCANEO 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESCANEO Y CAD</span>
+            <h3>Digitalización y Reconstrucción Técnica</h3>
+            <p>Captura tridimensional de piezas físicas para ajuste exacto y reproducción.</p>
+          </div>
+        </article>
+
+        <article class="chamfer-card portfolio-item" data-category="laser">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 03 · GRABADO LÁSER</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">LÁSER</span>
+            <h3>Cartas en Cuero y Exhibidores MDF</h3>
+            <p>Corte y grabado de alta definición para identidad comercial y exhibición.</p>
+          </div>
+        </article>
+
+        <article class="chamfer-card portfolio-item" data-category="escaneo">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 04 · PERSONAJES 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESCULTURA DIGITAL</span>
+            <h3>Mascotas y Personajes de Marca</h3>
+            <p>Desarrollo de personajes 3D optimizados tanto para medios digitales como impresión física.</p>
+          </div>
+        </article>
+
+        <article class="chamfer-card portfolio-item" data-category="laser">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 05 · ARQUITECTURA EFÍMERA</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESPACIO Y RENDER</span>
+            <h3>Pabellones y Montajes de Gran Formato</h3>
+            <p>Planimetría estructural, visualización arquitectónica y coordinación en sitio.</p>
+          </div>
+        </article>
+
+        <article class="chamfer-card portfolio-item" data-category="impresion3d">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 06 · PROPS Y RÉPLICAS</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">PRODUCCIÓN ADITIVA</span>
+            <h3>Piezas Especiales de Gran Escala</h3>
+            <p>Fabricación aditiva reforzada para exhibición comercial y activaciones de marca.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Videos / Reels de Instagram -->
+  <section id="videos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">EN MOVIMIENTO</span>
+        <h2>PROCESOS Y REELS DEL TALLER</h2>
+        <p>Mira cómo pasan los diseños de la pantalla a la pieza física. Síguenos en <strong>@mada.tunja</strong>.</p>
+      </div>
+
+      <div class="reels-grid">
+        <!-- Slot 1: Listo para incrustar Reel de Instagram o clip .mp4 local -->
+        <div class="chamfer-card reel-card">
+          <div class="reel-frame placeholder-reel">
+            <span>REEL IG #01<br><small>Pega aquí tu enlace de Instagram Reel o sube un clip .mp4</small></span>
+          </div>
+        </div>
+
+        <!-- Slot 2 -->
+        <div class="chamfer-card reel-card">
+          <div class="reel-frame placeholder-reel">
+            <span>REEL IG #02<br><small>Proceso de impresión 3D / Escaneo / Corte láser</small></span>
+          </div>
+        </div>
+
+        <!-- Slot 3 -->
+        <div class="chamfer-card reel-card">
+          <div class="reel-frame placeholder-reel">
+            <span>REEL IG #03<br><small>Entrega y detalles finales</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <a href="https://instagram.com/mada.tunja" target="_blank" rel="noopener" class="btn btn-outline">Ver más videos en @mada.tunja</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo trabajamos -->
+  <section id="proceso" class="section section-alt">
+    <div class="container">
+      <div class="chamfer-card process-banner">
+        <div class="process-intro">
+          <span class="tag tag-light">FILOSOFÍA DE TRABAJO</span>
+          <h2>ASÍ SE ARMA TU PROYECTO</h2>
+          <p>Cada pieza se estudia antes de encender una máquina. Cuando nos confirmes, lo ponemos en marcha.</p>
+        </div>
+
+        <div class="process-pillars">
+          <div class="pillar">
+            <strong>01. No es automático</strong>
+            <p>Revisamos cada proyecto de forma individual para entender su uso real y exigencia técnica.</p>
+          </div>
+          <div class="pillar">
+            <strong>02. Optimización real</strong>
+            <p>Si existe una mejor forma de fabricarlo o reducir costos sin sacrificar resistencia, te la proponemos.</p>
+          </div>
+          <div class="pillar">
+            <strong>03. Calidad de base</strong>
+            <p>La precisión y el buen acabado no son un cobro extra: son parte obligatoria del proceso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zona de Reseñas de Google + Botón de Google Maps -->
+  <section id="resenas" class="section">
+    <div class="container">
+      <div class="reviews-top">
+        <div class="section-header" style="margin-bottom: 0;">
+          <span class="tag">CONFIANZA VERIFICADA</span>
+          <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+          <p>Opiniones reales de empresas, instituciones y creadores en Boyacá y Colombia.</p>
+        </div>
+
+        <div class="google-badge">
+          <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <span>Perfil verificado en <strong>Google Maps</strong></span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="chamfer-card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Excelente nivel de detalle y cumplimiento en la entrega. Supieron aterrizar exactamente la idea que necesitábamos para nuestros trofeos.”</p>
+          <div class="review-author">
+            <strong>Cliente verificado</strong>
+            <span>Trofeos personalizados · Tunja</span>
+          </div>
+        </article>
+
+        <article class="chamfer-card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Muy buena asesoría técnica desde el modelado 3D hasta la pieza final. Se nota el cuidado en cada acabado.”</p>
+          <div class="review-author">
+            <strong>Cliente verificado</strong>
+            <span>Modelado e impresión 3D</span>
+          </div>
+        </article>
+
+        <article class="chamfer-card review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">“Trabajo impecable en grabado láser y exhibidores para nuestro local. Recomendados al 100%.”</p>
+          <div class="review-author">
+            <strong>Cliente verificado</strong>
+            <span>Corte láser y marca · Boyacá</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="reviews-actions">
+        <a href="https://www.google.com/maps/search/?api=1&query=MADA+print+Transversal+17E+32+10+Tunja" target="_blank" rel="noopener" class="btn btn-primary">Ver ubicación y reseñas en Google Maps</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=MADA+print+Transversal+17E+32+10+Tunja" target="_blank" rel="noopener" class="btn btn-outline">Déjanos tu calificación</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-magenta.png" alt="MADA print" class="footer-logo" id="footerLogo">
+        <p class="footer-tagline">EN LOS DETALLES ESTÁ <strong>| EL DIABLO |</strong></p>
+        <p class="footer-loc">Transversal 17E # 32 - 10, Tunja, Boyacá · Despachos a todo Colombia.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>INICIEMOS TU PROYECTO</h3>
+        <ul class="contact-list">
+          <li>
+            <span>WhatsApp directo:</span>
+            <a href="https://wa.me/573204236411" target="_blank" rel="noopener">+57 320 423 6411</a>
+          </li>
+          <li>
+            <span>Correo corporativo:</span>
+            <a href="mailto:contacto@madaprint.com">contacto@madaprint.com</a>
+          </li>
+          <li>
+            <span>Instagram y TikTok:</span>
+            <a href="https://instagram.com/mada.tunja" target="_blank" rel="noopener">@mada.tunja</a>
+          </li>
+          <li>
+            <span>Google Maps:</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=MADA+print+Transversal+17E+32+10+Tunja" target="_blank" rel="noopener">MADA print · Tunja</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MADA print · Mario Reyes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
