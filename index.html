@@ -1,1 +1,258 @@
-<h1>MADA print - Próximamente :P</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADA print | Diseño Personalizado y Producción Aditiva en Tunja</title>
+  <meta name="description" content="Modelado y escaneo 3D, trofeos y recordatorios personalizados, corte láser y arquitectura efímera en Tunja, Boyacá. En los detalles está el diablo.">
+  <link rel="icon" type="image/png" href="assets/logo-magenta.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand" aria-label="MADA print inicio">
+        <img src="assets/logo-magenta.png" alt="Logo MADA print" class="brand-logo">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://wa.me/573204236411?text=Hola%20MADA%20print,%20quiero%20cotizar%20un%20proyecto" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Cotizar proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Principal -->
+  <section id="inicio" class="hero">
+    <div class="watermark watermark-top" aria-hidden="true">MADAPRINT</div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">EN LOS DETALLES ESTÁ <strong>| EL DIABLO |</strong></span>
+        <h1>DISEÑO PERSONALIZADO Y PRODUCCIÓN ADITIVA</h1>
+        <p class="hero-lead">Tu proyecto inicia aquí. <strong>Bien pensado. Bien hecho.</strong> Desarrollamos piezas a medida en Tunja con despachos a todo el país.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/573204236411?text=Hola%20Mario,%20tengo%20un%20proyecto%20en%20mente%20y%20quisiera%20cotizarlo" target="_blank" rel="noopener" class="btn btn-primary">Hablar por WhatsApp</a>
+          <a href="#portafolio" class="btn btn-outline">Ver trabajos</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="chamfer-card hero-card">
+          <img src="assets/logo-blanco.png" alt="Imagotipo MADA print" class="hero-logo-float">
+          <div class="hero-card-meta">
+            <span>TUNJA · BOYACÁ</span>
+            <span>3D · LÁSER · RENDER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="watermark watermark-bottom" aria-hidden="true">MADAPRINT</div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">ESPECIALIDADES</span>
+        <h2>LO QUE CONSTRUIMOS</h2>
+        <p>Combinamos precisión técnica CAD, escultura digital y manufactura aditiva para materializar ideas que no existen en catálogo.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="chamfer-card service-card">
+          <span class="card-number">01</span>
+          <h3>MODELADO Y ESCANEO 3D</h3>
+          <p>Ingeniería inversa con escáner 3D de alta precisión, modelado técnico en CAD y escultura digital de personajes listos para fabricación.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">02</span>
+          <h3>TROFEOS Y RECORDATORIOS</h3>
+          <p>Galardones corporativos, piezas conmemorativas y artículos personalizados en impresión 3D FDM y resina con acabados limpios.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">03</span>
+          <h3>CORTE Y GRABADO LÁSER</h3>
+          <p>Personalización de precisión en madera, cuero, acrílico y materiales especiales para marcas, eventos y gastronomía.</p>
+        </article>
+
+        <article class="chamfer-card service-card">
+          <span class="card-number">04</span>
+          <h3>ARQUITECTURA EFÍMERA Y RENDER</h3>
+          <p>Diseño espacial de stands, recorridos virtuales en tiempo real y renders fotorrealistas de gran formato para ferias y eventos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio filtrable -->
+  <section id="portafolio" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">ARCHIVO DE PROYECTOS</span>
+        <h2>HECHO EN EL TALLER</h2>
+        <p>Una muestra de piezas fabricadas, escaneos técnicos y desarrollos visuales.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Filtrar proyectos">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="impresion3d">Impresión 3D y Trofeos</button>
+        <button class="filter-btn" data-filter="escaneo">Modelado y Escaneo</button>
+        <button class="filter-btn" data-filter="laser">Láser y Espacio</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Proyecto 1 -->
+        <article class="chamfer-card portfolio-item" data-category="impresion3d">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 01 · TROFEOS 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">IMPRESIÓN 3D</span>
+            <h3>Trofeos Corporativos a Medida</h3>
+            <p>Producción en serie corta con geometría personalizada y acabados multicapa.</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="chamfer-card portfolio-item" data-category="escaneo">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 02 · ESCANEO 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESCANEO Y CAD</span>
+            <h3>Digitalización y Reconstrucción Técnica</h3>
+            <p>Captura tridimensional de piezas físicas para ajuste exacto y reproducción.</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="chamfer-card portfolio-item" data-category="laser">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 03 · GRABADO LÁSER</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">LÁSER</span>
+            <h3>Cartas en Cuero y Exhibidores MDF</h3>
+            <p>Corte y grabado de alta definición para identidad comercial y exhibición.</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="chamfer-card portfolio-item" data-category="escaneo">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 04 · PERSONAJES 3D</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESCULTURA DIGITAL</span>
+            <h3>Mascotas y Personajes de Marca</h3>
+            <p>Desarrollo de personajes 3D optimizados tanto para medios digitales como impresión física.</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 5 -->
+        <article class="chamfer-card portfolio-item" data-category="laser">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 05 · ARQUITECTURA EFÍMERA</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">ESPACIO Y RENDER</span>
+            <h3>Pabellones y Montajes de Gran Formato</h3>
+            <p>Planimetría estructural, visualización arquitectónica y coordinación en sitio.</p>
+          </div>
+        </article>
+
+        <!-- Proyecto 6 -->
+        <article class="chamfer-card portfolio-item" data-category="impresion3d">
+          <div class="portfolio-thumb placeholder-thumb">
+            <span>FOTO 06 · PROPS Y RÉPLICAS</span>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">PRODUCCIÓN ADITIVA</span>
+            <h3>Piezas Especiales de Gran Escala</h3>
+            <p>Fabricación aditiva reforzada para exhibición comercial y activaciones de marca.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo trabajamos (del manual de cotización) -->
+  <section id="proceso" class="section">
+    <div class="container">
+      <div class="chamfer-card process-banner">
+        <div class="process-intro">
+          <span class="tag tag-light">FILOSOFÍA DE TRABAJO</span>
+          <h2>ASÍ SE ARMA TU PROYECTO</h2>
+          <p>Cada pieza se estudia antes de encender una máquina. Cuando nos confirmes, lo ponemos en marcha.</p>
+        </div>
+
+        <div class="process-pillars">
+          <div class="pillar">
+            <strong>01. No es automático</strong>
+            <p>Revisamos cada proyecto de forma individual para entender su uso real y exigencia técnica.</p>
+          </div>
+          <div class="pillar">
+            <strong>02. Optimización real</strong>
+            <p>Si existe una mejor forma de fabricarlo o reducir costos sin sacrificar resistencia, te la proponemos.</p>
+          </div>
+          <div class="pillar">
+            <strong>03. Calidad de base</strong>
+            <p>La precisión y el buen acabado no son un cobro extra: son parte obligatoria del proceso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto y Footer -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-magenta.png" alt="MADA print" class="footer-logo">
+        <p class="footer-tagline">EN LOS DETALLES ESTÁ <strong>| EL DIABLO |</strong></p>
+        <p class="footer-loc">Transversal 17E # 32 - 10, Tunja, Boyacá · Despachos a todo Colombia.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>INICIEMOS TU PROYECTO</h3>
+        <ul class="contact-list">
+          <li>
+            <span>WhatsApp directo:</span>
+            <a href="https://wa.me/573204236411" target="_blank" rel="noopener">+57 320 423 6411</a>
+          </li>
+          <li>
+            <span>Correo corporativo:</span>
+            <a href="mailto:contacto@madaprint.com">contacto@madaprint.com</a>
+          </li>
+          <li>
+            <span>Instagram y TikTok:</span>
+            <a href="https://instagram.com/mada.tunja" target="_blank" rel="noopener">@mada.tunja</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> MADA print · Mario Reyes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
