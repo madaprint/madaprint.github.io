@@ -18,7 +18,7 @@
   --transition: 0.25s ease;
 }
 
-/* Modo Oscuro */
+/* Variables de Modo Oscuro (carbón técnico para conservar contraste con #FF0066) */
 body.dark-mode {
   --bg-main: #1A1A1E;
   --bg-surface: #242429;
@@ -474,7 +474,7 @@ h3 {
   margin-bottom: 0.35rem;
 }
 
-/* Reels / Tarjetas estáticas con enlace */
+/* Reels / Videos */
 .reels-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -492,35 +492,33 @@ h3 {
   position: relative;
 }
 
-.reel-link-card {
-  display: block;
-  position: relative;
-}
-
-.reel-link-card .reel-frame img {
+.reel-frame iframe,
+.reel-frame video {
   width: 100%;
   height: 100%;
+  border: 0;
   object-fit: cover;
-  transition: transform 0.35s ease;
+  display: block;
 }
 
-.reel-link-card:hover .reel-frame img {
-  transform: scale(1.04);
-}
-
-.play-badge {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  background-color: var(--magenta);
-  color: #FFFFFF;
+.placeholder-reel {
+  background: linear-gradient(160deg, var(--bg-surface) 0%, var(--magenta-soft) 100%);
+  border: 2px dashed var(--magenta);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
   font-family: var(--font-accent);
   font-weight: 800;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  color: var(--magenta);
+}
+
+.placeholder-reel small {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--text-body);
 }
 
 /* Proceso */
