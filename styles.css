@@ -71,3 +71,34 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+    /* Tarjetas estáticas con enlace a Reels */
+.reel-link-card {
+  display: block;
+  position: relative;
+}
+
+.reel-link-card .reel-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.reel-link-card:hover .reel-frame img {
+  transform: scale(1.04);
+}
+
+.play-badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  background-color: var(--magenta);
+  color: #FFFFFF;
+  font-family: var(--font-accent);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
