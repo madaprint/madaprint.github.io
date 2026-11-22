@@ -426,8 +426,14 @@ h3 {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .portfolio-item {
@@ -441,9 +447,11 @@ h3 {
 }
 
 .portfolio-thumb {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   width: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .placeholder-thumb {
